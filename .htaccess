@@ -1,0 +1,10 @@
+# Установка дефолтной кодировки
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+
+#Запрещаем доступ для всех, кроме указанных IP-адресов
+ErrorDocument 404 /404.php
+Order deny,allow
+Deny from all
+Allow from 195.209.230.69 127.0.0.1
