@@ -84,9 +84,9 @@ a {
     color: #777;
 }
 .main_welcome{
-	text-align:center;
-	font-size: 100px;
-	margin-top: 20px;
+    text-align:center;
+    font-size: 100px;
+    margin-top: 20px;
 }
 
 .header {
@@ -239,10 +239,10 @@ a {
     box-shadow: 0 0 3px #3b8dbd;
 }
 .loglink {
-	color: #3b8dbd;
+    color: #3b8dbd;
 }
 .reglink {
-	color: #3b8dbd;
+    color: #3b8dbd;
 }
 
 .input:valid + span:after {
@@ -260,8 +260,8 @@ a {
 
 .button{
     border: solid 1px #3b8dbd;
-	background: #3b8dbd;
-	color: white;
+    background: #3b8dbd;
+    color: white;
         padding: 7px 12px;
         border-radius:4px;
         float: right;

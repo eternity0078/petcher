@@ -1,13 +1,10 @@
 
 
 <?php if ( isset ($_SESSION['logged_user']) ) : ?>
-	Авторизован! <br/>
-	Привет, <?php echo $_SESSION['logged_user']->login; ?>!<br/>
+<?php echo $_SESSION['logged_user']->login; ?>!<br/>
 
-	<a href="logout.php">Выйти</a>
+    <a href="logout.php"></a>
     
-    <?php else : ?>
-Доступ закрыт<br/>
-<a href="/login.php">Авторизация</a>
-<a href="/signup.php">Регистрация</a>
+    <?php else : header("Location: /index.php");?>
+
 <?php endif; ?>

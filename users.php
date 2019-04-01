@@ -8,7 +8,6 @@
     <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="js/click-carousel.js"></script> 
     <script type="text/javascript" src="js/script.js"></script> 
-    <script src="js/photo1.js"></script>
     <script type="text/javascript" src="js/jquery_confirm/jquery_confirm.js"></script>
     <link rel="icon" type="image/png" href="images/favicon.ico"/>
     <title>PetCher</title> 
@@ -36,26 +35,17 @@
                 </div>
             </div>
             <div class="col-2-3">
-                <div class="adm">
-                    <div class="photo">
-                        <? $img = $_SESSION['logged_user']['photo'];
-                        //echo $img;
-                        echo '<img src="'.$img.'"/>';
-                        ?>
-                    <button>Редактировать</button>
-                    </div>
-                    
-                    <div class="info">
-                        <?php 
-                        echo '<h3>';
-                        $fio = $_SESSION['logged_user']['fio'];
-                        echo $fio;
-                        'echo </h3>'; ?>
-                    </div>
-                </div>
+                <div class="user">
+                    <div class="photo"></div>
+                    <div class="info"> 
+                        <label id="full_name">Имя фамилия</label>
+                        <label id="email">email</label>
+                        <label id="last_visit">Last visit</label>
+                    </div>              
+                </div>                   
             </div>
         </div>
-    </div>
+  </div>
 </div>
 
 
@@ -65,11 +55,11 @@
 
 <!--Футер -->
 <footer>
-
+    <div class="container">
         <?php 
             include("includes/footer.php");
         ?> 
-
+    </div>
 </footer>
 
 </body>
